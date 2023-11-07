@@ -24,14 +24,7 @@ function App() {
               </PrivateRoute>
             }
           />
-          <Route
-            path={"/books/:id"}
-            element={
-              <PrivateRoute>
-                <BookDetails />
-              </PrivateRoute>
-            }
-          />
+          <Route path={"/books/:id"} element={<BookDetails />} />
           <Route
             path={"/editbook/:id"}
             element={

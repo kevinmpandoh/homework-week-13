@@ -7,12 +7,13 @@ export default function PrivateRoute({ children, ...rest }) {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
+    console.log(isAuthenticated);
     if (token) {
       setIsAuthenticated(true);
-      navigate("/");
+      // navigate("/");
     } else {
       setIsAuthenticated(false);
-      navigate("/");
+      // navigate("/");
     }
   }, []);
 
